@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_flexbox.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav class="flex-nav">
+  <div><img src="../media/imagenes/logo.jpg" width="166" height="80" class="imagenlogo"></div>
+  <div><a href="#marcador_sobremi">Sobre mí</a></div>
+  <div><a href="#marcador_marca">Marca</a></div>
+  <div><a href="#marcador_fotografia">Fotografia</a></div>
+  <div><a href="#marcador_animacion">Animación</a></div>
+  <div><a href="#marcador_ilustracion">Ilustración</a></div>
+  <div><a href="#marcador_modelo3d">Modelo 3D</a></div>
+  <div><a href="#marcador_contacto">Contacto</a></div>
+  &nbsp;</nav>
+<header class="flex-container-header">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+	<img src="../media/imagenes/77026058_1018331755185058_2005231217305190400_o.jpg" alt="" width="2048" height="1365" class="imagen-script"/>
+  <div class="text">Ilustración</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="../media/imagenes/DSC_0256.JPG" alt="" width="6000" height="4000" class="imagen-script"/>
+<div class="text">Fotografía</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../media/imagenes/09 parcial 1.jpg" alt="" width="1024" height="576" class="imagen-script"/>
+<div class="text">Modelo 3d</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../media/imagenes/logo 2 header.jpg" width="1080" height="720" alt=""/>
+  <div class="text">Marca</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</header>
+<main class="flex.conteiner.main">
+  <section>
+    <h2 id="marcador_sobremi">Sobre Mi</h2>
+    <div class="flex-container-section">
+      <div><img src="../media/imagenes/foto sobre mi.jpg" width="540" height="300" class="image-sobremi"></div>
+      <div class="div_sobremi">
+        <h3 class="h3_sobremi">Sobre Mí</h3>
+        <p class="p_sobremi">Hola mi nombre es Erik, son una persona con mucha imaginación, desde pequeño me gustaba todo lo relacionado con el dibujo, hasta que me di cuenta que esto de diseño gráfico era lo mío disfruto mucho este trabajo, siempre he intentado crear las cosas a mi estilo, como dije soy una persona muy imaginativa, y quiero aprovechar este potencial para ayudar a las personas, varios proyectos que he hecho me han dado la experiencia suficiente para lograr trabajos de calidad pero sobre todo que estos cumplan con las necesidades de la personas.</p>
+        &nbsp;</div>
+      &nbsp;</div>
+    &nbsp;</section>
+  <section>
+    <h2 id="marcador_marca">Marca</h2>
+    <div class="flex-container-serv">
+      <div class="div_descripcion">
+        <div class="div_descripcion_contenido">Servicios de creación de marca, puede ser de un negocio, empresa, o uno propio que te identifique, para tus redes sociales, página web, etc. Desde logotipos, isotipos, imagotipos e isologos </div>
+        &nbsp;</div>
+      <div class="flex-wrap-servic just-box-serv">
+        <div><img src="../media/imagenes/logo 3.jpg" width="270" height="270" class="imagen-de-serv"></div>
+        <div><img src="../media/imagenes/logo 1.jpg" width="270" height="270" class="imagen-de-serv"></div>
+        <div><img src="../media/imagenes/Logo 4.jpg" width="270" height="270" class="imagen-de-serv"></div>
+        <div><img src="../media/imagenes/logo 2.jpg" width="270" height="270" class="imagen-de-serv"></div>
+      </div>
+      &nbsp;</div>
+    &nbsp;</section>
+<section>
+  <h2 id="marcador_fotografia">Fotografía</h2>
+  <div class="flex-container-serv">
+      <div class="flex-wrap-servic just-box-serv">
+        <div><img src="../media/imagenes/Foto 1.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/foto 2.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/Foto 3.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/Foto 6.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+      </div>
+      <div class="div_descripcion">
+        <div class="div_descripcion_contenido">Toma y edición de foto, fotos de paisaje, sesión personal, foto de producto, arquitectura, restauración de fotografías, montajes, </div>
+        &nbsp;</div>
+&nbsp;</div>
+  &nbsp;</section>
+<section>
+    <h2 id="marcador_animacion">Animación </h2>
+    <div class="flex-container-serv">
+      <div class="div_descripcion">
+        <div class="div_descripcion_contenido">Desarrollo de animaciones, logotipos animados, cortometrajes que incluyen desarrollo de personajes, escenarios, puede ser bajo una técnica digital o prácticos como el stopmotion, </div>
+        &nbsp;</div>
+      <div class="flex-wrap-servic just-box-serv flex-column">
+        <div>
+          <video class="video_size" controls="controls" muted="muted" loop="loop" >
+            <source src="../media/video/intro especial 4 años.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div></div>
+</div>
+      &nbsp;</div>
+  &nbsp;</section>
+  <section>
+    <h2 id="marcador_ilustracion">Ilustraciones </h2>
+    <div class="flex-container-serv">
+      <div class="flex-wrap-servic just-box-serv">
+        <div><img src="../media/imagenes/ilustracion 1.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/ilustracion 4.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/Ilustracion 2.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div><img src="../media/imagenes/Ilustracion 3.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+      </div>
+      <div class="div_descripcion">
+        <div class="div_descripcion_contenido">Desarrollo de proyectos de ilustración, retratos, caricaturas, libros infantiles, ilustraciones desde una plataforma digital, o de otras técnicas prácticas como pintura óleo, acuarela, pastel, aerografía, desarrollo de dibujo en físico a digital.</div>
+        &nbsp;</div>
+&nbsp;</div>
+  &nbsp;</section>
+<section>
+  <h2 id="marcador_modelo3d">Modelado 3d</h2>
+  <div class="flex-container-serv">
+      <div class="div_descripcion">
+        <div class="div_descripcion_contenido">Bajo la técnica de modelado en 3d, desarrollo de logotipos, escenarios, modelos de personajes, muebles, productos, arquitectura, escenas, si cabe la posibilidad estos modelos pueden ser animados para darles movimiento con el uso de varias herramientas de animación y modelado para 3d.</div>
+        &nbsp;</div>
+      <div class="flex-wrap-servic just-box-serv">
+        <div class="div-imagen-servi"><img src="../media/imagenes/modelo 3d 3.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div class="div-imagen-servi"><img src="../media/imagenes/modelo 3d 1.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div class="div-imagen-servi"><img src="../media/imagenes/modelo 3d 6.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+        <div class="div-imagen-servi"><img src="../media/imagenes/modelo 3d 5.jpg" alt="" width="270" height="270" class="imagen-de-serv"/></div>
+      </div>
+&nbsp;</div>
+  &nbsp;</section>
+<section>
+  <h2 id="marcador_contacto">Contacto</h2>
+  <div class="flex-container-serv flex_color_contac">
+    <div class="dic_contac">
+      <div class="div_ima_contac"> <img src="../media/imagenes/icono ubicacion.jpg" alt="" width="100" height="100" class="image_iconos"/>
+        <p class="p_contac">Benito Juarez No. 2002, Colonia Barrio de San Juan, 72960 Puebla, Pue.</p>
+      </div>
+<div> <img src="../media/imagenes/icono instagram.jpg" alt="" width="100" height="100" class="image_iconos"/>
+  <p class="p_contac"><a href="https://www.instagram.com/erik_d6" target="new">Instagram</a></p>
+</div>
+      <div>
+        <img src="../media/imagenes/icono twitter.jpg" alt="" width="100" height="100" class="image_iconos"/>
+        <p class="p_contac"><a href="https://twitter.com/ErikDG10" target="new">Twitter</a></p>
+</div>
+      <div>
+        <img src="../media/imagenes/icono whatssap.jpg" alt="" width="100" height="100" class="image_iconos"/>
+        <p class="p_contac">797-977-65-76</p>
+      </div>
+    </div>
+&nbsp;</div>
+  &nbsp;</section>
+&nbsp;</main>
+<footer>
+<div class="flex_conteiner_footer flex_direction_footer">
+<div>
+  <h5>Elaborado por Erik Ivan Reyes Gil</h5>
+  &nbsp;</div>
+    &nbsp;</div>
+&nbsp;</footer>
+</body>
+</html>
